@@ -1,0 +1,472 @@
+echo $SHELL
+echo $TERM
+whoami
+echo $HOST
+echo $USER
+printenv
+echo $USER
+echo $HOME
+echo $OLDPWD
+clear
+echo "hola $HOST"
+echo hola
+echo "a" "a"
+echo '$HOST'
+echo "$HOST"
+echo  date 
+date
+echo today is `date`
+echo today is `echo date`
+echo today is ``echo date``
+echo today is $(date)
+echo today is $(echo $(date))
+echo "hola\
+y adios"
+echo "hola\
+y adios\
+!\
+"
+echo "hoy es \\
+mi diaecho "hola\
+y adios\
+!\
+""
+echo "hoy es \\
+mi dia"
+skfndafdjf
+dsgsdgvds
+echo "sfjdkfj\
+\
+
+echo hola
+echo "my favorite \"esta\""
+echo "this is in \n  2 lienas!\
+"
+echo bara t es un tabulador \t hola
+echo holi;echo guapi
+for f in $(ls); do echo "there is a $f";done
+cat /etc/os-release
+cd 
+cd Data/shell/ls
+cat Text_example.txt
+cd Data/shell
+cat Text_example.txt
+cat Text_example.txt Text_example.txt
+echo "cat es de concatenate"
+cat -n  Text_example.txt 
+pwd
+cd ~ 
+pwd
+echo $pwd
+echo $PWD
+cd /etc
+cd ~
+cd ~ 
+cd Data/shell
+cd ~ 
+cd .. 
+cd -
+echo pwd
+echo $PWD
+ls
+ls -a
+ls -al
+ls
+ls -1
+ls -1 -s
+ls --help
+ls -l -1
+ls -l1s
+ls -la
+ls -S
+ls -Sr
+ls-aSr
+ls -laSr
+ls -lat
+chmod 777 .history
+ls -l .history
+chmod 555 .history
+ls -l .history
+chmod 644 .history
+ls -l .history
+chmod 600 .history
+ls -l .history
+mkdir
+mkdir holiguapi
+ls
+mkdir holiguapu/cosas/nais
+mkdir -p holiguapi/cosas/nazis
+touch newfile
+ls - l
+ls -l
+touch anaconda3
+ls -l
+cp newfile holiguapi/cosas/nazis
+ls holiguapi/cosas/nazis
+cp holiguapi minuevofolder
+cp -r holiguapi minuvofolder
+mv mv holiguapi minuevofolder
+mv mv holiguapi minuvofolder
+mv holiguapi minuvofolder
+ls -l
+ls -rf  minuvofolder
+rm -rf  minuvofolder
+ls -l
+mkdir 
+mkdir --help
+~ cd
+mkdir first_dir
+ls 
+cat .history
+ls
+cd first_dir
+touch "text_file.txt"
+ls
+pwd
+mkdir sub1; mkdir sub2; mkdir sub3
+ls
+.history
+cd ~
+.history
+history
+cat .history
+pwd first_dir
+cd /first_dir
+ls
+cd first_dir
+cp "text_file.txt" sub1
+cd /sub1
+pwd
+pwd sub1
+cd sub1
+ls
+..cd
+cd..
+mv --help
+mv "text_file.txt" sub2 "text_file2.txt"
+mv "text_file.txt" "text_file_2.txt"  sub2 
+mv "text_file.txt" sub2
+ls
+cd .
+cd ..
+ls
+mv "text_file.txt" sub2
+cd sub2
+ls
+rename --help
+cd ~
+ls
+cat .history
+ls
+firt_dir
+cd first dir
+cd first_dir
+cd sub2
+ls
+mv "text_file.txt" "text_file2.txt"
+ls
+chmod 775 text_file2.txt
+cp -r sub3
+cp -r
+git
+cd ~
+git
+clear
+git config --global user.name "Alvaro Diez"
+git config --global user.email "alvzotegui@gmail.com"
+cat ~/.gitconfig
+git clone https://github.com/utxu/kschool_master_26.git
+ls
+cd kschool_master_26
+ls
+ls -a
+touch chachi_file
+git status
+touch dos_file
+git add chachi_file
+git status
+git commit -m "añado un archivo chachi"
+git status
+git push
+git diff
+pwd
+ls
+git clone [200~https://github.com/utxu/master_KS_26.git~
+git clone https://github.com/utxu/master_KS_26
+git clone https://github.com/utxu/master_KS_26.git
+cd master_KS_26
+ll -a
+cd ..
+ll
+git clone https://github.com/utxu/master_KS_26.git master_KS_26_copy
+cd master_KS_26
+gedit README.md
+git status
+git add README.md
+git status
+git commit 
+git log
+gitedit README.md
+gedit README.md
+git status
+git commit -m edit second line
+git commit -m "edit second line"
+git status
+git log
+git push
+git add -u
+git status
+git commit -m "otro actualizacion"
+git push
+cd ~ 
+git init repo_local
+cd repo_local
+ll -a
+touch my_ideas.txt
+gedit my_ideas.txt
+git add my_ideas.txt
+git commit -m "mi primera idea"
+git status
+git log
+ll
+l
+gedit my_second_idea.txt
+git status
+git log
+gedit my_ideas.txt
+git log
+git add -u
+git status
+git add my_second_idea.txt
+git status
+git commit -m "subir los dos ficheros"
+git log
+git remote add origin https://github.com/utxu/my_ideas.git
+git branch -M main
+git push -u origin main
+git log
+cd ~ 
+man cp
+man mv
+cat --help
+less gitconfig
+less.gitconfig
+cd repo_local
+less .gitconfig
+cd Data/opentraveldata
+cd~ 
+cd ~ 
+cd Data/opentraveldata
+ll
+less optd_aircraft.csv
+less airline_nb_of_fligths.csv
+less ref_airline_nb_of_fligths.csv
+less ref_airline_nb_of_flights.csv
+less optd_por_public.csv
+less -N -S  optd_por_public.csv
+git clone https://github.com/utxu/master_KS_26.git master_KS_26_copy
+git commit -m "mi primera idea"
+ll
+rm -rf master_ks_26_copy
+ll
+alias
+l
+type ll
+alias gs="git status"
+gs
+lls .zshrc
+ls .zshrc
+ls zshrc
+less .zshrc
+cd ~
+less .zshrc
+type python
+which python
+whereir python
+whereis python
+which python
+sudo which python
+clear
+cd Data/shell
+head Finn.txt
+head -5 Finn.txt
+head -n 5 Finn.txt
+head -n -5 Finn.txt
+tail
+tail -n +5 Finn-txt
+tail -n +5 Finn.txt
+wc Finn.txt
+wc -l Finn.txt
+wc -w Finn.txt
+echo "help meeeee" | wc
+wc Text_example.txt
+cat Text_example.txt
+cat Text_example.txt | wc
+cat Text_example.txt | head 10 | wc
+cat Text_example.txt | head | wc
+clear
+cat Text_example.txt | head -3 | wc
+head -3 Text_example.txt |wc
+cat Text_example.txt |wc > salida
+ll
+file salida
+cat Text_example.txt |wc > salida
+cat salida
+cat Text_example.txt |wc >> salida
+car salida
+cat salidad
+cat salida
+head -1 salida
+head -2 salida
+head -10 salida
+wc < Text_example.txt
+ll
+cd ~c
+cd ~
+cd opentraveldata
+cd Data/opentraveldata
+ll
+ls -S
+ls -s
+ls S
+ls -S
+ll -S
+ll -S | head -n 1
+ll -S | head 
+ll -S | head -n 1
+ll -S | head -n -1
+ll -S | head -n -3
+ll -S | head -n -3 > largest_file.txt
+ll
+cat largest_file.txt
+ll -S | head -n -3 > largest_file.txt
+ll -S | head -n -3
+ll -S | head -n -4
+ll -S | head -n -4 > largest_file.text
+cat largest_file.txt
+ll
+ll -S head
+ll -S | head -n 1
+ll -S | head -1
+ll -S | head -n -5
+ll -S | head -n -5 > largest_file.txt
+cat largest_file.txt
+lls
+ll
+cd ..
+ll
+cd shell
+ll
+Finn.txt | head -n -5
+cat Finn.txt | head -n -5
+cat Finn.txt | head -n 5
+cat Finn.txt | head -n 5 | wc
+ll
+less Text_example.txt
+less Text_example.txt -N
+less -N Text_example.txt 
+cat -N Text_example.txt 
+cat Text_example.txt
+cat Text_example.txt | head -n 5
+cat Text_example.txt | head -n 5 | less -N
+ll
+ll -S
+cat Text_example.txt | head -n 5| tail -1
+cd ~
+cd Data
+cd opentraveldata
+ls -l 
+ls -l -S
+cd ..
+cd shell
+cat Text_example.txt | head -n 5 | less -N
+cd ..
+ll
+git init ClasesMaster
+cd ClasesMaster
+mkdir Shell
+mkdir Python
+mkdir Challenge
+cd Shell
+cat ~/.history > shell_clase_2020-11-14.txt
+ll
+gedit 
+gedit shell_clase_2020-11-14.txt
+git add shell_clase_2020-11-14.txt
+git status
+git commit -m "commands ls, cat, pipe, head, tail, less"
+git status
+git remote add origin https://github.com/utxu/clases_master26.git
+git branch -M main\
+git push -u origin main
+ll
+history -20
+cd ~
+find
+find | wc
+find . | wc
+find . -name "text_file.*"
+find . -name "chachi"
+find . -name "text_filE"
+find . -iname "text_file.*"
+find . type -d -iname "text_file.*"
+find . -type d -iname "text"
+find . -type d -maxdepth 5 -mindepth 2 -iname "text"
+find . -type f -maxdepth 5 -mindepth 2 -iname "text"
+find  -maxdepth 5 -mindepth 2 -iname "text"
+find -type -f -perm 777
+find -type f -perm 777
+find -type f ! -perm 777
+find -type f -empty | wc -l
+find -type f -empty -size 0 | wc -l
+find -type f -empty -size 0 
+find -type f -empty -size +10M 
+find -type f -mmin -60 
+sudo find -type f -mmin -60 
+sudo find -type f -iname "text_file*"
+sudo find -type f -iname "text_file*" | wc
+sudo find -type f -iname "text_file*" -exec echo "FOUND IT" \;
+echo this \; echo that
+sudo find -type f -iname "text_file*" 
+sudo find -type f -iname "text_file*" -exec ls -l {} \;
+ls -l
+sudo find -type f -iname "text_file*" -exec ls -l {} \; -exec head -2{} \;
+sudo find -type f -iname "text_file*" -exec ls -l {} \; -exec head -2 {} \;
+sudo find -type f -iname "text_file*" -ok ls -l {} \;
+sudo find -type f -iname "text_file*" -exec "head -2 {} \ wc" \;
+sudo find -type f -iname "text_file*" -exec head -2 {} | wc \;
+clear
+bash -c "echo this"
+bash -c "cd..\ ; ls -l"
+bash -c "cd ..\ ; ls -l"
+bash -c "cd ../ ; ls -l"
+bash -c "cd ../ ; ls -l > /dsc/file"
+bash -c "cd ../ ; ls -l > file"
+bash -c "cd ../ ; ls -l > ./desc/file"
+sudo find -type f -iname "text_file" -exec bash -c "head -2 {} | wc" \;
+history -20
+history -50
+cd ~
+find . -type f -mmin -60
+find . -type f -empty 
+history -50
+find . -type f -empty -perm 777
+find . -type f -ok -empty -perm 777
+find . -type f -ok -empty -perm 777 \;
+history -50
+history -80
+cd Data
+ll
+ls -S
+l -S
+find ~/Data
+find ~/Data/ 
+history -60
+find ~/Data/ -exec ls l {} \;
+find ~/Data/ -exec ls -l {} \;
+cd ~ 
+cd ClasesMaster
+cd Shell
+ll
+git add Shell shell_clase_2020-11-14.txt
+cat ~/.history > Shell shell_clase_2020-11-14-2.txt
