@@ -45,69 +45,131 @@ echo "this is in \n  2 lienas!\
 echo bara t es un tabulador \t hola
 echo holi;echo guapi
 for f in $(ls); do echo "there is a $f";done
-cat /etc/os-release
-cd 
-cd Data/shell/ls
+
+# cat send el contenido to an stdout:
+cat /etc/os-release # con este comando podemos ver las características de nuestro SO
+
+# cd es el comando de navegación, con este comando nos podemos ir moviendo a través de los 
+# directorios:
+
+cd Data/shell # Nos situamos en la subcarpeta 'shell' de la carpeta Data
+
+cat Text_example.txt # con cat extraemos el contenido del archivo indicado 
+
+cd Data/shell 
 cat Text_example.txt
-cd Data/shell
-cat Text_example.txt
-cat Text_example.txt Text_example.txt
+cat Text_example.txt Text_example.txt # duplicamos en pantalla el contenido del archivo
+
 echo "cat es de concatenate"
-cat -n  Text_example.txt 
-pwd
-cd ~ 
-pwd
-echo $pwd
-echo $PWD
+
+cat -n  Text_example.txt # Lanzamos el contenido del archivo con números de línea
+
+pwd # en qué directorio nos encontramos??
+
+cd ~ # regresamos al directorio del usuario 
+
+echo $PWD # dime cuál es el directorio en el que me encuentro y q está guardado en dicha variable
+
 cd /etc
-cd ~
-cd ~ 
-cd Data/shell
-cd ~ 
-cd .. 
-cd -
-echo pwd
-echo $PWD
-ls
-ls -a
-ls -al
-ls
-ls -1
-ls -1 -s
-ls --help
-ls -l -1
-ls -l1s
-ls -la
-ls -S
-ls -Sr
-ls-aSr
-ls -laSr
-ls -lat
+
+cd .. # regresemos al directorio superior inmediato al que estoy
+
+ls # imprime los contenidos del directorio en el que me encuentro:
+# en azul los directorios, en blanco los archivos..
+
+ls -a # muestra todo, hasta los archivos ocultos que están precedidos por un ".".
+
+ls -al # argumento l, muestralo en formato long
+
+ls -1 # ahora en formato largo sin mostrar los archivos ocultos
+
+ls -1 -s  # argumento -s de short, en orden alfabetico
+
+ls --help # solicitamos la ayuda para conocer el comando ls
+
+ls -l -1 # argumento -1, muestra un archivo por linea
+
+ls -l1s # formato long, uno por linea y ordenado por orden alfabetico
+
+ls -la # formato long y me muestras todos los archivos incluidos los ocueltos
+
+ls -S # S mayuscula, ordena los archivos por su tamaño de mayor a menor
+
+ls -Sr # argumento r los ordena en orden inverso, y aquí, en formato ancho
+
+ls-aSr # todos, en orden de tamaño pero en orden contrario, empezando por el pequeño
+
+ls -laSr # en formato largo, todos los arvhios, de menor a mayor
+
+ls -lat # en formato largo, todos los archivos, y el argumento t es por orden de modificación/tiempo
+
+# PERMISOS: 
+
+# comando chmod gestiona los permisos de escritura, lectura y ejecución de los archivos. Se suele trabajar con
+# los siguientes números:
+# Lectura: 4
+# Escritura: 2
+# Ejecución: 1
+
+# De esta forma podemos combiar de forma eficiente los permisos. Hay 3 números correspondientes a 3 posiciones:
+# user/group/other, en los cuales encontramos.. 
+-r: read (4)
+-w: write (2)
+-x: execute (1)
+
+# en el siguiente comando el primer 7 se refiere al user, 4 (lectura), 2 (escritura) y 1 (ejecución) 
+# suma 7, por lo q tiene el usuario todos los permisos. El segundo número hacer referencia al grupo, y el tercer
+# número hace referencia al resto del mundo. Por lo que en el siguiente comando estamos explicitando que cualquier
+# usuario tiene todos los permisos (777) en el archivo .history
 chmod 777 .history
+
+ls -l .history # ordenamos el formato long el archivo history
+
+chmod 555 .history # le otorfamos a todos los usuarios el permiso de lectura y ejecucion (4+1)
+
 ls -l .history
-chmod 555 .history
+chmod 644 .history # Le otorfamos al usuario el permido de lectura y escritura (4+2) y al grupo y al resto, solo
+# el permiso de lectura 
+
+l -ls .history # visualizamos
+
+chmod 600 .history  # con 0 nO concedemos ningun permiso, en este a caso a cualquiera q no sea le usuario
+
 ls -l .history
-chmod 644 .history
-ls -l .history
-chmod 600 .history
-ls -l .history
+
+# CREACION DE DIRECTORIOS:
+
 mkdir
-mkdir holiguapi
-ls
-mkdir holiguapu/cosas/nais
-mkdir -p holiguapi/cosas/nazis
-touch newfile
-ls - l
+mkdir holiguapi # creamos esta carpeta en el working directory en el que nos encontramos..
+
+mkdir -p holiguapi/cosas/nazis # se nos va la olla
+
+# el comando touch crea un nuevo archivo vacío o actualiza el acceso de un archivo existente (elegance in the name)
+
+touch newfile # crea el nuevo archivo vacío con el nombre 'newfile'
+
 ls -l
-touch anaconda3
+
+touch anaconda3 # le damos un toque a alguien
+
 ls -l
-cp newfile holiguapi/cosas/nazis
-ls holiguapi/cosas/nazis
-cp holiguapi minuevofolder
-cp -r holiguapi minuvofolder
-mv mv holiguapi minuevofolder
+
+# COMANDO COPY CP
+
+cp <source dir> <destination dir> 
+
+cp newfile holiguapi/cosas/nazis   # Copiamos el archivo newfile al nuevo directorio
+
+ls holiguapi/cosas/nazis   # vamos a verlo... 
+
+cp -r holiguapi minuevofolder  # copia directorios de forma recursiva...
+
+
+
 mv mv holiguapi minuvofolder
+
 mv holiguapi minuvofolder
+
 ls -l
 ls -rf  minuvofolder
 rm -rf  minuvofolder
