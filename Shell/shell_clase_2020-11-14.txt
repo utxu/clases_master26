@@ -77,7 +77,7 @@ cd .. # regresemos al directorio superior inmediato al que estoy
 ls # imprime los contenidos del directorio en el que me encuentro:
 # en azul los directorios, en blanco los archivos..
 
-ls -a # muestra todo, hasta los archivos ocultos que están precedidos por un ".".
+ls -a # muestra todo, hasta los archivos ocultos que están precedidos por un "." (ocultos).
 
 ls -al # argumento l, muestralo en formato long
 
@@ -97,15 +97,15 @@ ls -S # S mayuscula, ordena los archivos por su tamaño de mayor a menor
 
 ls -Sr # argumento r los ordena en orden inverso, y aquí, en formato ancho
 
-ls-aSr # todos, en orden de tamaño pero en orden contrario, empezando por el pequeño
+ls -aSr # todos los archivos, en orden de tamaño pero en orden contrario, empezando por el pequeño
 
-ls -laSr # en formato largo, todos los arvhios, de menor a mayor
+ls -laSr # en formato largo, todos los arvhios, de menor a mayor y en orden inverso
 
 ls -lat # en formato largo, todos los archivos, y el argumento t es por orden de modificación/tiempo
 
 # PERMISOS: 
 
-# comando chmod gestiona los permisos de escritura, lectura y ejecución de los archivos. Se suele trabajar con
+# comando 'chmod' gestiona los permisos de escritura, lectura y ejecución de los archivos. Se suele trabajar con
 # los siguientes números:
 # Lectura: 4
 # Escritura: 2
@@ -140,23 +140,28 @@ ls -l .history
 # CREACION DE DIRECTORIOS:
 
 mkdir
+
 mkdir holiguapi # creamos esta carpeta en el working directory en el que nos encontramos..
 
-mkdir -p holiguapi/cosas/nazis # se nos va la olla
+mkdir -p holiguapi/cosas/nazis # con el argumento -p está creando una cadena de directorios nuevos (cosas/nazis)
+# no existía, crea toda la ruta
 
-# el comando touch crea un nuevo archivo vacío o actualiza el acceso de un archivo existente (elegance in the name)
+# el comando 'touch' crea un nuevo archivo vacío o actualiza el acceso de un archivo existente (elegance in the name), o
+# también nos indica la última hora de de acceso/lectura de un archivo o su ultima fecha de modificación.
 
 touch newfile # crea el nuevo archivo vacío con el nombre 'newfile'
 
 ls -l
 
-touch anaconda3 # le damos un toque a alguien
+touch anaconda3 # le damos un toque a anaconda3 y se actualiza la fecha de modificación
 
 ls -l
 
 # COMANDO COPY CP
 
 cp <source dir> <destination dir> 
+
+# el comando cp copia uno o más arhcivos en un directorio
 
 cp newfile holiguapi/cosas/nazis   # Copiamos el archivo newfile al nuevo directorio
 
@@ -165,10 +170,13 @@ ls holiguapi/cosas/nazis   # vamos a verlo...
 cp -r holiguapi minuevofolder  # copia directorios de forma recursiva...
 
 
+# El comando mv puede renombrar también un archivo.
 
-mv mv holiguapi minuvofolder
+mv antiguo_file nuevo_file
 
-mv holiguapi minuvofolder
+# o puede mover archivo/s de un directorio a otro:
+
+mv file1 file2 dir1 dir2 a_directorio_de_destino
 
 ls -l
 ls -rf  minuvofolder
@@ -181,11 +189,18 @@ mkdir first_dir
 ls 
 cat .history
 ls
+
+# EJERCICIOS: -------------------------------------------------- 
+
 cd first_dir
-touch "text_file.txt"
+touch "text_file.txt" # 2. crea un archivo vacio en first_dir
 ls
 pwd
-mkdir sub1; mkdir sub2; mkdir sub3
+
+chmod g+x,o+w text_file.txt # 3 añade permisos de ejecucion al grupo de ususarios y escritura al resto 
+
+sub1 mkdir sub2 sub3 # crea 3 subdirectorios en first_dir
+ 
 ls
 .history
 cd ~
@@ -196,53 +211,53 @@ pwd first_dir
 cd /first_dir
 ls
 cd first_dir
-cp "text_file.txt" sub1
+
+cp "text_file.txt" sub1/ # 4. copia text_file en el subdirectorio 1 <file_in_soruce_dir> <destination_dir>
+
 cd /sub1
 pwd
 pwd sub1
-cd sub1
-ls
-..cd
-cd..
+
 mv --help
-mv "text_file.txt" sub2 "text_file2.txt"
-mv "text_file.txt" "text_file_2.txt"  sub2 
-mv "text_file.txt" sub2
-ls
-cd .
-cd ..
-ls
-mv "text_file.txt" sub2
-cd sub2
-ls
-rename --help
-cd ~
-ls
-cat .history
-ls
-firt_dir
-cd first dir
-cd first_dir
-cd sub2
-ls
-mv "text_file.txt" "text_file2.txt"
-ls
-chmod 775 text_file2.txt
-cp -r sub3
-cp -r
-git
-cd ~
-git
-clear
+
+mv "text_file.txt" sub2/ "text_file2.txt" # 6. mueve el archivo al directorio sub2 con el nombre test_file2.txt
+
+# Copia el directorio 1 entero en el directorio 3:
+cp -r sub1/ sub3/
+
+# 8. Change file name of “first_dir /sub3/text_file.txt.2” to “first_dir /sub3/text_file.txt.backup”
+mv sub3/text_file.txt.2 sub3/text_file.txt.backup
+
+# 9. Move “first_dir /sub2/text_file.txt.backup” to “first_dir” directory file as hidden
+mv sub2/text_file.txt.backup ./.text_file.txt.backup
+
+# 10. Delete the “sub2” subdirectory
+
+# el comando rm elimina directorios <rm file1 file 2> o recursivamente elimina directorios <rm -r dir1 dir2>
+rm -r sub2/
+
+# USAMOS GIT:
+
+git # con este comando nos aparece una ventana explicativa de los comando de git:
+
+cd ~ # nos ubicamos en el root directory..
+
+clear # limpiamos la terminal..
+
+# Y AHORA VAMOS A CREAR NUESTRO GIT EN LINUX:
 git config --global user.name "Alvaro Diez"
 git config --global user.email "alvzotegui@gmail.com"
-cat ~/.gitconfig
+
+cat ~/.gitconfig # visualiamos los datos que acabamos de introducir..
+
+# EXTRAEMOS EL REPOSITORIO QUE HEMOS CREADO PREVIAMENTE EN GITHUB:
 git clone https://github.com/utxu/kschool_master_26.git
 ls
 cd kschool_master_26
 ls
 ls -a
-touch chachi_file
+
+
 git status
 touch dos_file
 git add chachi_file
