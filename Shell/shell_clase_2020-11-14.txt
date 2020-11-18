@@ -74,6 +74,7 @@ cd /etc
 
 cd .. # regresemos al directorio superior inmediato al que estoy
 
+COMANDO ls --------------- 
 ls # imprime los contenidos del directorio en el que me encuentro:
 # en azul los directorios, en blanco los archivos..
 
@@ -163,11 +164,11 @@ cp <source dir> <destination dir>
 
 # el comando cp copia uno o más arhcivos en un directorio
 
-cp newfile holiguapi/cosas/nazis   # Copiamos el archivo newfile al nuevo directorio
+cp newfile holiguapi/cosas/nazis   # Copiamos el archivo newfile al nuevo directorio recien creado
 
 ls holiguapi/cosas/nazis   # vamos a verlo... 
 
-cp -r holiguapi minuevofolder  # copia directorios de forma recursiva...
+cp -r dir1 holiguapi/cosas/nazis dir1_copy  copiamos el directorio y todos sus contenidos en la nueva ruta especificada con el nombre 'dir1_copy'
 
 
 # El comando mv puede renombrar también un archivo.
@@ -242,9 +243,11 @@ git # con este comando nos aparece una ventana explicativa de los comando de git
 
 cd ~ # nos ubicamos en el root directory..
 
-clear # limpiamos la terminal..
+clear # limpiam
 
-# Y AHORA VAMOS A CREAR NUESTRO GIT EN LINUX:
+os la terminal..
+
+# Y AHORA VAMOS A CREAR NUESTRO GIT EN LINUX:-------------------------------
 git config --global user.name "Alvaro Diez"
 git config --global user.email "alvzotegui@gmail.com"
 
@@ -268,7 +271,7 @@ git push
 git diff
 pwd
 ls
-git clone [200~https://github.com/utxu/master_KS_26.git~
+
 git clone https://github.com/utxu/master_KS_26
 git clone https://github.com/utxu/master_KS_26.git
 cd master_KS_26
@@ -343,6 +346,8 @@ less optd_por_public.csv
 less -N -S  optd_por_public.csv
 git clone https://github.com/utxu/master_KS_26.git master_KS_26_copy
 git commit -m "mi primera idea"
+
+
 ll
 rm -rf master_ks_26_copy
 ll
@@ -363,27 +368,61 @@ whereir python
 whereis python
 which python
 sudo which python
+
+
 clear
+
 cd Data/shell
+
+# COMANDO head -------------------- 
+# muestra las 10 primeras filas de cualquier archivo...
+
 head Finn.txt
 head -5 Finn.txt
-head -n 5 Finn.txt
-head -n -5 Finn.txt
-tail
-tail -n +5 Finn-txt
-tail -n +5 Finn.txt
+head -n 5 Finn.txt # es la misma salida que la anterior
+
+head -n -5 Finn.txt # te muestra todo menos las últimas 5 lineas del archivo
+
+tail -n 5 Finn-txt # Muestra las últimas 5 lineas del archivo..
+
+# COMANDO wc -------------------- 
+# abreviacion de 'word count' 
+# La salida del comando son de tres integers que indican:
+# 1. EL número de líneas
+# 2. El número de palabras
+# 3. El número de bytes
+
 wc Finn.txt
-wc -l Finn.txt
-wc -w Finn.txt
-echo "help meeeee" | wc
+wc -l Finn.txt # El argumento -l muestra solamente el número de líneas
+
+w -wc Finn.txt # El argumento -w muestra el número de palabras y el argumento -c muestra el número de bytes
+
+# PIPES '|' ------------------
+# EL comando pipe '|' te permite enviar la salida de un comando a otro comando como entrada:
+
+echo "help meeeee" | wc # Enviamos la cadena al comando wc
+
+# EL COMANDO cat -----------------
+# la vista más simple del archivo se realiza con el comando 'cat' de concatenate
+# Puesto que muestra el archivo entero es recomendable sustituir por el comando 'less' si quieres leer la salida.
+# Muy útil para enviar su salida a un pipe '|'
+# con el argumento -n nos muestra el número de línea junto a cada línea del archivo.
+
 wc Text_example.txt
 cat Text_example.txt
 cat Text_example.txt | wc
-cat Text_example.txt | head 10 | wc
+cat Text_example.txt | head 10 | wc # Podemos pipear cada salida del comando anterior al posterior
 cat Text_example.txt | head | wc
-clear
+
+clear # Limpiamos la consola para seguir trabajando... 
+
 cat Text_example.txt | head -3 | wc
 head -3 Text_example.txt |wc
+
+# COMANDO '>' y '>>' ---------------
+# con el comando '>' enviamos la salida de un comando a un archivo de texto que creamos.
+# con el comando '>>' no sobreescribirmos el archivo si ya existe, pegamos la nueva salida al final del texto del archivo existente
+
 cat Text_example.txt |wc > salida
 ll
 file salida
@@ -396,6 +435,10 @@ cat salida
 head -1 salida
 head -2 salida
 head -10 salida
+
+# COMANDO '<' -------------------
+# Podemos utilizar el símbolo '<' para utilizar un archivo como un input para un comando:
+
 wc < Text_example.txt
 ll
 cd ~c
