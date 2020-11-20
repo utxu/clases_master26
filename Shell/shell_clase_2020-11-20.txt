@@ -1,0 +1,270 @@
+
+ll
+cd ClasesMaster
+ll
+cd Shell
+ll
+cd 4
+cd ~
+cd ~clear
+clear
+seq 1 10
+seq 10 10
+seq 10 100
+seq 1 2 10
+seq 0 2 10
+seq 0 2 10 > unique_example.txt
+seq 0 10 >> unique_example.txt
+cat unique_example.txt
+uniq uniq_text_example.txt
+cat unique_example.txt
+sort unique_example.txt
+sort -n unique_example.txt
+sort unique_example.txt | uniq
+sort -u unique_example.txt
+sort unique_example.txt | uniq -d
+sort unique_example.txt | uniq -c
+cd /Data
+ll
+cd Data
+cd opentraveldata
+ll
+less
+less optd_aircraft.csv
+sort-t "^" -k 6,6 optd_aircraft.csv
+sort -t "^" -k 6,6 optd_aircraft.csv
+sort -t "^" -k 6,6 optd_aircraft.csv | head
+sort -t "^" -k 6r,6 optd_aircraft.csv | head
+# Hemos ordenado la columna 6 (ver ejemplo en casa)
+sort -t "^" -k 6r,6 -k 4,4 optd_aircraft.csv | head
+sort -t "^" -k 6r,6 -k 4r,4 optd_aircraft.csv | head
+sort -t "^" -k 6r,6 -k 4rn,4 optd_aircraft.csv | head
+head optd_aircraft.csv
+sort -t "^" -k 2,2 -u optd_aircraft.csv
+sort -t "^" -k 2,2 -u optd_aircraft.csv | less
+sort -t "^" -k 2,2 -u optd_aircraft.csv | wc -l
+cd ~
+seq 15 > 20lines.txt
+seq 9 1 20 >> 20lines.txt
+echo "20\n20" >> 20lines.txt
+cat 20lines.txt
+sort -n 20lines.txt
+sort -n -u  20lines.txt
+sort -n   20lines.txt
+uniq -d 20lines.txt
+uniq -c 20lines.txt
+uniq -d 20lines.txt
+uniq -d tail -n 1 20lines.txt
+uniq -d tail -1 20lines.txt
+uniq -d tail 20lines.txt
+uniq -d 20lines.txt | tail -n 1
+history 20
+uniq -d 20lines.txt | tail -n 1
+uniq -d 20lines.txt | tail
+uniq -c 20lines.txt | tail
+uniq -c 20lines.txt | sort -t " "
+uniq -c 20lines.txt | sort -t " " k 6,6
+uniq -c 20lines.txt | sort -t " " -k 6,6
+uniq -c 20lines.txt | sort -t " " -k 1,1
+uniq -c 20lines.txt | sort -t " " -k 7, 7
+uniq -c 20lines.txt | sort -t " " -k 7,7
+uniq -c 20lines.txt | sort -t " " -k 7r
+uniq -c 20lines.txt | sort -t " " -k 7r, 7
+uniq -c 20lines.txt | sort -t " " -k 7r,7
+#ordenamos por la columna 7, de ahí ese 7 y la r en reverse
+uniq -c 20lines.txt | sort -t " " -k 7r,7 | head -1
+uniq -c 20lines.txt | sort -n | head -1
+uniq -c 20lines.txt | sort -nr | head -1
+cd Data/opentraveldata
+ll
+head optd_aircraft.csv
+sort -t "^" -k7,7 optd_aircraft.csv| head
+sort -t "^" -k7n,7 optd_aircraft.csv| head
+sort -t "^" -k7n,7 optd_aircraft.csv| head | head -1
+sort -t "^" -k7n,7 optd_aircraft.csv| head 
+sort -t "^" -k7n,7 optd_aircraft.csv| head -1
+cut -d "^" -f 1, 3-5 optd_aircraft.csv
+cut -d "^" -f 1,3-5 optd_aircraft.csv|head
+cut -d "^" -f 3-5,1 optd_aircraft.csv|head
+cut -d "^" -f 3-5,1 --output-delimiter="," optd_aircraft.csv|head
+cut -d "^" -f 3-5,1 --output-delimiter="OMG" optd_aircraft.csv|head
+seq 1 10 > numbers
+clear
+ll
+cat numbers
+paste numbers
+cat numbers numbers 
+paste numbers numbers
+paste numbers numbers numbers
+paste numbers numbers numberscd ../shell
+cd ../shell
+ll
+paste numbers Text_example.txt
+paste -s numbers
+cd ..
+cd opentraveldata
+paste -s numbers
+paste -s -d "^" numbers
+mv numbers ~/Data/shell
+cd ..
+cd /shell
+ll
+cd shell
+ll
+wc < Text_example.txt
+wc <(cat Text_example.txt )
+paste <(seq 15) <(seq 10)
+paste <(seq 10 20) <(cat Text_example.txt)
+paste -d "^" <(seq 10 20) <(cat Text_example.txt)
+# son dos columnas
+cd ~
+cd /Data/opentraveldata
+ll
+cd Data
+cd opentraveldata
+head -1 optd_aircraft.csv
+head -1 optd_aircraft.csv | wc
+head -1 optd_aircraft.csv | tr "^" "Q"
+head -1 optd_aircraft.csv | tr "^" "\n"
+paste <(seq 10) <(head -1 optd_aircraft.csv| tr "^" "\n"\
+
+paste <(seq 10) <(head -1 optd_aircraft.csv| tr "^" "\n")\
+
+# Visualizamos el numero de columna
+paste <(seq 8) <(head -1 optd_aircraft.csv| tr "^" "\n")\
+
+echo "master data science" | tr as sa
+echo "master data science" | tr a A
+echo "    master    data      science" | tr -s " " "^"
+echo "master data science" | tr -d s
+history 30
+cat optd_aircraft.csv| tr "^" ","
+head optd_por_public.csv
+head -1 optd_por_public.csv
+head -1 optd_por_public.csv | tr "^" " "
+head -1 optd_por_public.csv | tr "^" " "| wc
+head optd_airlines.csv
+head -1 optd_airlines.csv
+head -1 optd_airlines.csv | tr "^" " "
+head -2 optd_airlines.csv
+head -3 optd_airlines.csv
+cat  optd_airlines.csv | cut -f 8
+cat  optd_airlines.csv | cut -f 8 | head -2
+history
+history 50
+cut -d "^" -f 8
+cut -d "^" -f 8 optd_airlines.csv| head -1
+cut -d "^" -f 8 optd_airlines.csv| head 
+cut -d "^" -f 8 optd_airlines.csv| uniq -c
+cut -d "^" -f 8 optd_airlines.csv| uniq -c | sort
+cut -d "^" -f 8 optd_airlines.csv| sort -u 
+cut -d "^" -f 8 optd_airlines.csv| sort -n 
+cut -d "^" -f 8 optd_airlines.csv| sort -nr 
+cut -d "^" -f 8 optd_airlines.csv| sort -nr | head
+cut -d "^" -f 8 optd_airlines.csv| sort -n | head 
+cut -d "^" -f 8,14  optd_airlines.csv| sort -n | head 
+cut -d "^" -f 8,14  optd_airlines.csv| head
+cat optd_airlines.csv| cut -d "^" -f 8,14 | head |sort -t "^" -k2,2
+cat optd_airlines.csv| cut -d "^" -f 8,14 | head |sort -t "^" -k2rn,2
+cat optd_airlines.csv| cut -d "^" -f 8,14 | head |sort -t "^" -k2rn,2 | head -1
+cat optd_airlines.csv| cut -d "^" -f 8,14 | head |sort -t "^" -k2rn,2 | head -3
+cat optd_airlines.csv| cut -d "^" -f 8,14  |sort -t "^" -k2rn,2 | head -3
+cat optd_airlines.csv| cut -d "^" -f 8,14  |sort -t "^" -k2rn,2 | head -1
+cat -d "^" -f 10 | head
+cat -d "^" -f 10 optd_airlines.csv| head
+cut -d "^" -f 10 optd_airlines.csv| head
+cut -d "^" -f 10 optd_airlines.csv| sort
+cut -d "^" -f 10 optd_airlines.csv| sort| unique -c
+cut -d "^" -f 10 optd_airlines.csv| sort| uniq -c
+# este era el ejercicio 5
+cut -d "^" -f 10 optd_airlines.csv| sort| uniq -c
+cut -d "^" -f 10 optd_airlines.csv| sort| uniq -c | sort
+cut -d "^" -f 10 optd_airlines.csv| sort| uniq -c | sort nr
+cut -d "^" -f 10 optd_airlines.csv| sort| uniq -c | sort -nr
+cd .. shell
+cd shell
+cd ..
+cd shell
+grep this Text_example.txt
+# busca el patron
+grep this Text_example.txt
+grep -v
+grep -v this Text_example.txt
+grep -v -n this Text_example.txt
+grep -i this Text_example.txt
+grep -i this Text_example.txt Finn.txt
+grep -i -n this Text_example.txt Finn.txt
+grep -i -nv this Text_example.txt Finn.txt
+grep -n this Text_example.txt
+grep -n B 1 this Text_example.txt
+ll
+grep -n -A 1 this Text_example.txt
+grep -n -C 1 this Text_example.txt
+grep -n -w this Text_example.txt
+grep -n line  Text_example.txt
+grep -n -w line  Text_example.txt
+grep -E "^T"
+grep -E "^T" Text_example.txt
+grep -E ^T Text_example.txt
+grep -E "^T" Text_example.txt
+grep -E "T^" Text_example.txt
+grep -E "T*" Text_example.txt
+grep -E "T^" Text_example.txt
+grep -E "^T" Text_example.txt
+echo 
+echo Sunday
+echo Sunday | sed ssday
+echo Sunday | sed ssdaysnights
+echo Sunday | sed 's/day/night'
+echo Sunday | sed 's/day/night/'
+echo Sunday.day | sed 's/day/night/'
+echo Sunday.day | sed 's/day/night/g'
+echo Sunday.day | sed s/day/night/g
+sed 's/this/THAT/g' Text_example.txt
+sed 's/this/RONALDO/g' Text_example.txt
+sed 's/this/RONALDO/gI' Text_example.txt
+cp Text_example.txt Text_example_copy.txt
+sed -i 's/this/RONALDO/gI' Text_example_copy.txt
+cat Text_example_copy.txt
+seq 5
+seq 5 | sed -n '2p'
+seq 5 | sed  '2p'
+# este ultimo imprime la segunda linea
+# Lo omitimos ocn el -n
+# q saca solo la seunda linea
+seq 5 | sed  '2p, 4p'
+seq 5 | sed  '2,4p'
+seq 5 | sed  -n '2,4p'
+seq 5 | sed  '3d'
+sed -i '3d' Text_example_copy.txt
+cat Text_example_copy.txt
+cat -n  Text_example_copy.txt
+sed -n '2p'
+sed -n '2p' Text_example_copy.txt
+sed '/lines/d' Text_example_copy.txt
+sed '/lines/!d' Text_example_copy.txt
+clear
+ll
+rm -rf Text_example_copy.txt
+ll
+cp Text_example.txt Text_example_copy.txt
+ll
+history 50
+sed 's/line/n/' Text_example_copy.txt
+sed 's/line/\n/' Text_example_copy.txt
+grep -n -w line Text_example_copy.txt
+grep -v line Text_example_copy.txt
+cat Text_example_copy.txt
+sed 's/line/\n/g' Text_example_copy.txt
+sed '/line/p' Text_example_copy.txt
+sed -n '/line/p' Text_example_copy.txt
+sed -n '/line/!p' Text_example_copy.txt
+cd ~
+ll
+cd ClasesMaster
+ll
+cd Shell
+ll
+git pull
+# primero actualizamos ocn remoto
+cat ~/.history > ./shell_clase_2020-11-20.txt
