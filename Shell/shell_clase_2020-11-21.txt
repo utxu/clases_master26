@@ -1,0 +1,1265 @@
+echo $SHELL
+echo $TERM
+whoami
+echo $HOST
+echo $USER
+printenv
+echo $USER
+echo $HOME
+echo $OLDPWD
+clear
+echo "hola $HOST"
+echo hola
+echo "a" "a"
+echo '$HOST'
+echo "$HOST"
+echo  date 
+date
+echo today is `date`
+echo today is `echo date`
+echo today is ``echo date``
+echo today is $(date)
+echo today is $(echo $(date))
+echo "hola\
+y adios"
+echo "hola\
+y adios\
+!\
+"
+echo "hoy es \\
+mi diaecho "hola\
+y adios\
+!\
+""
+echo "hoy es \\
+mi dia"
+skfndafdjf
+dsgsdgvds
+echo "sfjdkfj\
+\
+
+echo hola
+echo "my favorite \"esta\""
+echo "this is in \n  2 lienas!\
+"
+echo bara t es un tabulador \t hola
+echo holi;echo guapi
+for f in $(ls); do echo "there is a $f";done
+cat /etc/os-release
+cd 
+cd Data/shell/ls
+cat Text_example.txt
+cd Data/shell
+cat Text_example.txt
+cat Text_example.txt Text_example.txt
+echo "cat es de concatenate"
+cat -n  Text_example.txt 
+pwd
+cd ~ 
+pwd
+echo $pwd
+echo $PWD
+cd /etc
+cd ~
+cd ~ 
+cd Data/shell
+cd ~ 
+cd .. 
+cd -
+echo pwd
+echo $PWD
+ls
+ls -a
+ls -al
+ls
+ls -1
+ls -1 -s
+ls --help
+ls -l -1
+ls -l1s
+ls -la
+ls -S
+ls -Sr
+ls-aSr
+ls -laSr
+ls -lat
+chmod 777 .history
+ls -l .history
+chmod 555 .history
+ls -l .history
+chmod 644 .history
+ls -l .history
+chmod 600 .history
+ls -l .history
+mkdir
+mkdir holiguapi
+ls
+mkdir holiguapu/cosas/nais
+mkdir -p holiguapi/cosas/nazis
+touch newfile
+ls - l
+ls -l
+touch anaconda3
+ls -l
+cp newfile holiguapi/cosas/nazis
+ls holiguapi/cosas/nazis
+cp holiguapi minuevofolder
+cp -r holiguapi minuvofolder
+mv mv holiguapi minuevofolder
+mv mv holiguapi minuvofolder
+mv holiguapi minuvofolder
+ls -l
+ls -rf  minuvofolder
+rm -rf  minuvofolder
+ls -l
+mkdir 
+mkdir --help
+~ cd
+mkdir first_dir
+ls 
+cat .history
+ls
+cd first_dir
+touch "text_file.txt"
+ls
+pwd
+mkdir sub1; mkdir sub2; mkdir sub3
+ls
+.history
+cd ~
+.history
+history
+cat .history
+pwd first_dir
+cd /first_dir
+ls
+cd first_dir
+cp "text_file.txt" sub1
+cd /sub1
+pwd
+pwd sub1
+cd sub1
+ls
+..cd
+cd..
+mv --help
+mv "text_file.txt" sub2 "text_file2.txt"
+mv "text_file.txt" "text_file_2.txt"  sub2 
+mv "text_file.txt" sub2
+ls
+cd .
+cd ..
+ls
+mv "text_file.txt" sub2
+cd sub2
+ls
+rename --help
+cd ~
+ls
+cat .history
+ls
+firt_dir
+cd first dir
+cd first_dir
+cd sub2
+ls
+mv "text_file.txt" "text_file2.txt"
+ls
+chmod 775 text_file2.txt
+cp -r sub3
+cp -r
+git
+cd ~
+git
+clear
+git config --global user.name "Alvaro Diez"
+git config --global user.email "alvzotegui@gmail.com"
+cat ~/.gitconfig
+git clone https://github.com/utxu/kschool_master_26.git
+ls
+cd kschool_master_26
+ls
+ls -a
+touch chachi_file
+git status
+touch dos_file
+git add chachi_file
+git status
+git commit -m "añado un archivo chachi"
+git status
+git push
+git diff
+pwd
+ls
+git clone [200~https://github.com/utxu/master_KS_26.git~
+git clone https://github.com/utxu/master_KS_26
+git clone https://github.com/utxu/master_KS_26.git
+cd master_KS_26
+ll -a
+cd ..
+ll
+git clone https://github.com/utxu/master_KS_26.git master_KS_26_copy
+cd master_KS_26
+gedit README.md
+git status
+git add README.md
+git status
+git commit 
+git log
+gitedit README.md
+gedit README.md
+git status
+git commit -m edit second line
+git commit -m "edit second line"
+git status
+git log
+git push
+git add -u
+git status
+git commit -m "otro actualizacion"
+git push
+cd ~ 
+git init repo_local
+cd repo_local
+ll -a
+touch my_ideas.txt
+gedit my_ideas.txt
+git add my_ideas.txt
+git commit -m "mi primera idea"
+git status
+git log
+ll
+l
+gedit my_second_idea.txt
+git status
+git log
+gedit my_ideas.txt
+git log
+git add -u
+git status
+git add my_second_idea.txt
+git status
+git commit -m "subir los dos ficheros"
+git log
+git remote add origin https://github.com/utxu/my_ideas.git
+git branch -M main
+git push -u origin main
+git log
+cd ~ 
+man cp
+man mv
+cat --help
+less gitconfig
+less.gitconfig
+cd repo_local
+less .gitconfig
+cd Data/opentraveldata
+cd~ 
+cd ~ 
+cd Data/opentraveldata
+ll
+less optd_aircraft.csv
+less airline_nb_of_fligths.csv
+less ref_airline_nb_of_fligths.csv
+less ref_airline_nb_of_flights.csv
+less optd_por_public.csv
+less -N -S  optd_por_public.csv
+git clone https://github.com/utxu/master_KS_26.git master_KS_26_copy
+git commit -m "mi primera idea"
+ll
+rm -rf master_ks_26_copy
+ll
+alias
+l
+type ll
+alias gs="git status"
+gs
+lls .zshrc
+ls .zshrc
+ls zshrc
+less .zshrc
+cd ~
+less .zshrc
+type python
+which python
+whereir python
+whereis python
+which python
+sudo which python
+clear
+cd Data/shell
+head Finn.txt
+head -5 Finn.txt
+head -n 5 Finn.txt
+head -n -5 Finn.txt
+tail
+tail -n +5 Finn-txt
+tail -n +5 Finn.txt
+wc Finn.txt
+wc -l Finn.txt
+wc -w Finn.txt
+echo "help meeeee" | wc
+wc Text_example.txt
+cat Text_example.txt
+cat Text_example.txt | wc
+cat Text_example.txt | head 10 | wc
+cat Text_example.txt | head | wc
+clear
+cat Text_example.txt | head -3 | wc
+head -3 Text_example.txt |wc
+cat Text_example.txt |wc > salida
+ll
+file salida
+cat Text_example.txt |wc > salida
+cat salida
+cat Text_example.txt |wc >> salida
+car salida
+cat salidad
+cat salida
+head -1 salida
+head -2 salida
+head -10 salida
+wc < Text_example.txt
+ll
+cd ~c
+cd ~
+cd opentraveldata
+cd Data/opentraveldata
+ll
+ls -S
+ls -s
+ls S
+ls -S
+ll -S
+ll -S | head -n 1
+ll -S | head 
+ll -S | head -n 1
+ll -S | head -n -1
+ll -S | head -n -3
+ll -S | head -n -3 > largest_file.txt
+ll
+cat largest_file.txt
+ll -S | head -n -3 > largest_file.txt
+ll -S | head -n -3
+ll -S | head -n -4
+ll -S | head -n -4 > largest_file.text
+cat largest_file.txt
+ll
+ll -S head
+ll -S | head -n 1
+ll -S | head -1
+ll -S | head -n -5
+ll -S | head -n -5 > largest_file.txt
+cat largest_file.txt
+lls
+ll
+cd ..
+ll
+cd shell
+ll
+Finn.txt | head -n -5
+cat Finn.txt | head -n -5
+cat Finn.txt | head -n 5
+cat Finn.txt | head -n 5 | wc
+ll
+less Text_example.txt
+less Text_example.txt -N
+less -N Text_example.txt 
+cat -N Text_example.txt 
+cat Text_example.txt
+cat Text_example.txt | head -n 5
+cat Text_example.txt | head -n 5 | less -N
+ll
+ll -S
+cat Text_example.txt | head -n 5| tail -1
+cd ~
+cd Data
+cd opentraveldata
+ls -l 
+ls -l -S
+cd ..
+cd shell
+cat Text_example.txt | head -n 5 | less -N
+cd ..
+ll
+git init ClasesMaster
+cd ClasesMaster
+mkdir Shell
+mkdir Python
+mkdir Challenge
+cd Shell
+cat ~/.history > shell_clase_2020-11-14.txt
+ll
+gedit 
+gedit shell_clase_2020-11-14.txt
+git add shell_clase_2020-11-14.txt
+git status
+git commit -m "commands ls, cat, pipe, head, tail, less"
+git status
+git remote add origin https://github.com/utxu/clases_master26.git
+git branch -M main\
+git push -u origin main
+ll
+history -20
+cd ~
+find
+find | wc
+find . | wc
+find . -name "text_file.*"
+find . -name "chachi"
+find . -name "text_filE"
+find . -iname "text_file.*"
+find . type -d -iname "text_file.*"
+find . -type d -iname "text"
+find . -type d -maxdepth 5 -mindepth 2 -iname "text"
+find . -type f -maxdepth 5 -mindepth 2 -iname "text"
+find  -maxdepth 5 -mindepth 2 -iname "text"
+find -type -f -perm 777
+find -type f -perm 777
+find -type f ! -perm 777
+find -type f -empty | wc -l
+find -type f -empty -size 0 | wc -l
+find -type f -empty -size 0 
+find -type f -empty -size +10M 
+find -type f -mmin -60 
+sudo find -type f -mmin -60 
+sudo find -type f -iname "text_file*"
+sudo find -type f -iname "text_file*" | wc
+sudo find -type f -iname "text_file*" -exec echo "FOUND IT" \;
+echo this \; echo that
+sudo find -type f -iname "text_file*" 
+sudo find -type f -iname "text_file*" -exec ls -l {} \;
+ls -l
+sudo find -type f -iname "text_file*" -exec ls -l {} \; -exec head -2{} \;
+sudo find -type f -iname "text_file*" -exec ls -l {} \; -exec head -2 {} \;
+sudo find -type f -iname "text_file*" -ok ls -l {} \;
+sudo find -type f -iname "text_file*" -exec "head -2 {} \ wc" \;
+sudo find -type f -iname "text_file*" -exec head -2 {} | wc \;
+clear
+bash -c "echo this"
+bash -c "cd..\ ; ls -l"
+bash -c "cd ..\ ; ls -l"
+bash -c "cd ../ ; ls -l"
+bash -c "cd ../ ; ls -l > /dsc/file"
+bash -c "cd ../ ; ls -l > file"
+bash -c "cd ../ ; ls -l > ./desc/file"
+sudo find -type f -iname "text_file" -exec bash -c "head -2 {} | wc" \;
+history -20
+history -50
+cd ~
+find . -type f -mmin -60
+find . -type f -empty 
+history -50
+find . -type f -empty -perm 777
+find . -type f -ok -empty -perm 777
+find . -type f -ok -empty -perm 777 \;
+history -50
+history -80
+cd Data
+ll
+ls -S
+l -S
+find ~/Data
+find ~/Data/ 
+history -60
+find ~/Data/ -exec ls l {} \;
+find ~/Data/ -exec ls -l {} \;
+cd ~ 
+cd ClasesMaster
+cd Shell
+ll
+git add Shell shell_clase_2020-11-14.txt
+cat ~/.history > Shell shell_clase_2020-11-14-2.txt
+ll
+git add Shell shell_clase_2020-11-14-2.txt
+git add  shell_clase_2020-11-14-2.txt
+ll
+cat ~/.history >  shell_clase_2020-11-14-2.txt
+ll
+git add Shell shell_clase_2020-11-14-2.txt
+git commit -m "find commands"
+git push
+clear
+ll
+ls /l
+ls -l
+ll
+ls -S
+l
+l -S
+cd ClasesMaster
+git status
+git add
+git log
+git add --all
+git status
+git commit -m "actualizado el borrado de la carpeta erronea"
+git push
+git status
+ll
+cd git?y?shell
+ll
+cd ..
+cd ~/ClasesMaster
+ll
+cd Shell
+ll
+cd ~
+cd repo_local
+cd ..
+cd books
+ll
+cd ~
+cat hello-world | wc -w
+cat hello-world
+echo hello world | wc
+echo hello world | wc -w
+history 20
+history -f
+cat -n ~/.history
+ll
+whoami
+pwd
+cd books
+ll
+Big_Data.pdf
+head 10 Big_Data.pdf
+q
+ll
+cd ClasesMaster
+ll
+cd Shell
+ll
+shell_clase_2020-11-14.txt
+cat shell_clase_2020-11-14.txt
+ll
+cd ClasesMaster
+cd Shell
+ll
+cat shell_clase_master_2020-11-14.txt
+cat shell_clase__2020-11-14.txt
+cat shell_clase_2020-11-14.txt
+ll
+cd ClasesMaster/Shell
+ll
+less shell_clase_2020-11-14.txt
+less_shell_clase_2020-11-14-2.txt
+less shell_clase_2020-11-14-2.txt
+~ cd
+cd ~
+ll
+cd git_y_shell
+ll
+less history
+cd ~
+cd ClasesMaster/Shell
+ll
+less shell_clase_2020-11-14.txt
+gedit shell_clase_2020-11-14.txt
+echo shell_clase_2020-11-14.txt
+echo $SHELL
+echo $TERM
+cd ~
+whoami
+echo $HOST
+echo $USER
+printenv
+printenv USER
+printenv $HOST
+cd ~
+cat etc/os-release
+cat /etc/os-release
+cd 
+cd Data/shell/ls
+cd ~
+cd Data
+ll
+cd shell
+ll
+cat Finn.txt
+cat -n Finn.txt
+echo $pwd
+echo $PWD
+cd ..
+ls
+ls -a
+ls --help
+ls -al
+ls -l
+ls -l -s
+ls -l 1
+ls -l -1
+ls --help
+ls -sR
+ls -Sr
+cp --help
+cd ~
+cd ClasesMaster/Shell
+ll
+git status
+git add shell_clase_2020-11-14.txt
+git commit -m "actualizada en casa la clase"
+git status
+git log
+git push
+git status
+git diff
+git status
+git log
+cd ~
+ll
+l
+l /s
+l -s
+l
+l -n
+cd books
+ls
+l
+ls
+cd ..
+ls
+cd git_y_shell
+ls
+..
+cd ..
+cd ClasesMaster
+ls
+cd Shell
+ls
+l
+cd ~
+find . -type f -name shell\*
+cd ClasesMaster/Shell
+ls
+type grep who
+type which type rm if
+who
+echo $PATH
+cd ~
+ls
+find . minuevofolder
+GIT
+git
+cat ~/.gitconfig
+cd ClasesMaster
+l
+cd Shell
+l
+git status
+git checout
+git checkout
+git add shell_clase_2020-11-14.txt
+git status
+git commit -m "repaso de comandos shell dia 17 Nov"
+git status
+git push
+ls
+cde ~
+cd ~
+ll
+l
+l -a
+ll
+mkdir PruebasShell
+ll
+cd PruebasShell
+mkdir -p Creamos/una/cadena/de/directorios
+ll
+cd Creamos
+ll
+cd una
+ll
+cd cadena
+ll
+cd de
+ll
+cd directorios
+ll
+cp -r Creamos
+cp -r Creamos PruebasShell
+cd PruebasShell
+cd ..
+cd..
+cd ~/PruebasShell
+ll
+mkdir sub1 sub2 sub3
+ll
+cp sub1 Creamos/ sub1_copy
+cp sub1 Creamos/ 
+ll
+cp -r sub1 Creamos/ 
+cd Creamos
+ll
+cd ..
+cp -r Creamos/ sub1_copy
+cd Creamos
+ll
+cp -r sub1  Creamos/ sub1_copy
+cd..
+cd ..
+ll
+rm -r sub1_copy
+ll
+cp -r sub1 Creamos/sub1_copy
+cd Creamos
+ll
+rm -r sub1
+ll
+..
+cd .. 
+cd Data/Shell
+cd Data/shell
+cd ..
+cd Data/Shell
+cd Data
+ll
+cd Data/shell
+cd dhell
+cd shell
+cd ..
+cd Data/shell
+ll
+cat salidad
+cat salida
+cat Finn.txt
+wc Finn.txt
+head Finn.txt
+head -5 Finn.txt
+head -n 5
+head -n 5 Finn.txt
+head -n -5 Finn.txt
+tail Finn.txt
+tail -n +5 Finn.txt
+tail 5 Finn.txt
+tail -n 5 Finn.txt
+wc Finn.txt
+wc -l Finn.txt
+lynx http://elpais.com
+apt-get install lynx
+sudo apt-get install lynx
+lynx http://elpais.com
+cd ~
+wget
+wget http:// linuxpocketguide.com/sample.pdf
+ll
+cat sample.pdf
+ll
+wget https://docs.google.com/spreadsheets/d/e/2PACX-1vRFDhEyvVQnDiA462AvhiP-dKL1plNsA8-c9RxeT3mGbK3l9HRkTjwV-rMkCueGTJsu1LQb0CFW4bM9/pub?output=csv
+ll
+cd ClasesMaster/
+ll
+cd Shell
+git status
+git add shell_clase_2020-11-14.txt
+git status
+git commit -m "Actualización diaria de repaso"
+git log
+git status
+ll
+cd ..
+ll
+rm -rf tatus
+ll
+cd Shell
+ll
+git status
+git push
+git status
+git log
+git diff
+git status
+cd ~
+ll
+cd ClasesMaster
+ll
+cd Shell
+ll
+cd 4
+cd ~
+cd ~clear
+clear
+seq 1 10
+seq 10 10
+seq 10 100
+seq 1 2 10
+seq 0 2 10
+seq 0 2 10 > unique_example.txt
+seq 0 10 >> unique_example.txt
+cat unique_example.txt
+uniq uniq_text_example.txt
+cat unique_example.txt
+sort unique_example.txt
+sort -n unique_example.txt
+sort unique_example.txt | uniq
+sort -u unique_example.txt
+sort unique_example.txt | uniq -d
+sort unique_example.txt | uniq -c
+cd /Data
+ll
+cd Data
+cd opentraveldata
+ll
+less
+less optd_aircraft.csv
+sort-t "^" -k 6,6 optd_aircraft.csv
+sort -t "^" -k 6,6 optd_aircraft.csv
+sort -t "^" -k 6,6 optd_aircraft.csv | head
+sort -t "^" -k 6r,6 optd_aircraft.csv | head
+# Hemos ordenado la columna 6 (ver ejemplo en casa)
+sort -t "^" -k 6r,6 -k 4,4 optd_aircraft.csv | head
+sort -t "^" -k 6r,6 -k 4r,4 optd_aircraft.csv | head
+sort -t "^" -k 6r,6 -k 4rn,4 optd_aircraft.csv | head
+head optd_aircraft.csv
+sort -t "^" -k 2,2 -u optd_aircraft.csv
+sort -t "^" -k 2,2 -u optd_aircraft.csv | less
+sort -t "^" -k 2,2 -u optd_aircraft.csv | wc -l
+cd ~
+seq 15 > 20lines.txt
+seq 9 1 20 >> 20lines.txt
+echo "20\n20" >> 20lines.txt
+cat 20lines.txt
+sort -n 20lines.txt
+sort -n -u  20lines.txt
+sort -n   20lines.txt
+uniq -d 20lines.txt
+uniq -c 20lines.txt
+uniq -d 20lines.txt
+uniq -d tail -n 1 20lines.txt
+uniq -d tail -1 20lines.txt
+uniq -d tail 20lines.txt
+uniq -d 20lines.txt | tail -n 1
+history 20
+uniq -d 20lines.txt | tail -n 1
+uniq -d 20lines.txt | tail
+uniq -c 20lines.txt | tail
+uniq -c 20lines.txt | sort -t " "
+uniq -c 20lines.txt | sort -t " " k 6,6
+uniq -c 20lines.txt | sort -t " " -k 6,6
+uniq -c 20lines.txt | sort -t " " -k 1,1
+uniq -c 20lines.txt | sort -t " " -k 7, 7
+uniq -c 20lines.txt | sort -t " " -k 7,7
+uniq -c 20lines.txt | sort -t " " -k 7r
+uniq -c 20lines.txt | sort -t " " -k 7r, 7
+uniq -c 20lines.txt | sort -t " " -k 7r,7
+#ordenamos por la columna 7, de ahí ese 7 y la r en reverse
+uniq -c 20lines.txt | sort -t " " -k 7r,7 | head -1
+uniq -c 20lines.txt | sort -n | head -1
+uniq -c 20lines.txt | sort -nr | head -1
+cd Data/opentraveldata
+ll
+head optd_aircraft.csv
+sort -t "^" -k7,7 optd_aircraft.csv| head
+sort -t "^" -k7n,7 optd_aircraft.csv| head
+sort -t "^" -k7n,7 optd_aircraft.csv| head | head -1
+sort -t "^" -k7n,7 optd_aircraft.csv| head 
+sort -t "^" -k7n,7 optd_aircraft.csv| head -1
+cut -d "^" -f 1, 3-5 optd_aircraft.csv
+cut -d "^" -f 1,3-5 optd_aircraft.csv|head
+cut -d "^" -f 3-5,1 optd_aircraft.csv|head
+cut -d "^" -f 3-5,1 --output-delimiter="," optd_aircraft.csv|head
+cut -d "^" -f 3-5,1 --output-delimiter="OMG" optd_aircraft.csv|head
+seq 1 10 > numbers
+clear
+ll
+cat numbers
+paste numbers
+cat numbers numbers 
+paste numbers numbers
+paste numbers numbers numbers
+paste numbers numbers numberscd ../shell
+cd ../shell
+ll
+paste numbers Text_example.txt
+paste -s numbers
+cd ..
+cd opentraveldata
+paste -s numbers
+paste -s -d "^" numbers
+mv numbers ~/Data/shell
+cd ..
+cd /shell
+ll
+cd shell
+ll
+wc < Text_example.txt
+wc <(cat Text_example.txt )
+paste <(seq 15) <(seq 10)
+paste <(seq 10 20) <(cat Text_example.txt)
+paste -d "^" <(seq 10 20) <(cat Text_example.txt)
+# son dos columnas
+cd ~
+cd /Data/opentraveldata
+ll
+cd Data
+cd opentraveldata
+head -1 optd_aircraft.csv
+head -1 optd_aircraft.csv | wc
+head -1 optd_aircraft.csv | tr "^" "Q"
+head -1 optd_aircraft.csv | tr "^" "\n"
+paste <(seq 10) <(head -1 optd_aircraft.csv| tr "^" "\n"\
+
+paste <(seq 10) <(head -1 optd_aircraft.csv| tr "^" "\n")\
+
+# Visualizamos el numero de columna
+paste <(seq 8) <(head -1 optd_aircraft.csv| tr "^" "\n")\
+
+echo "master data science" | tr as sa
+echo "master data science" | tr a A
+echo "    master    data      science" | tr -s " " "^"
+echo "master data science" | tr -d s
+history 30
+cat optd_aircraft.csv| tr "^" ","
+head optd_por_public.csv
+head -1 optd_por_public.csv
+head -1 optd_por_public.csv | tr "^" " "
+head -1 optd_por_public.csv | tr "^" " "| wc
+head optd_airlines.csv
+head -1 optd_airlines.csv
+head -1 optd_airlines.csv | tr "^" " "
+head -2 optd_airlines.csv
+head -3 optd_airlines.csv
+cat  optd_airlines.csv | cut -f 8
+cat  optd_airlines.csv | cut -f 8 | head -2
+history
+history 50
+cut -d "^" -f 8
+cut -d "^" -f 8 optd_airlines.csv| head -1
+cut -d "^" -f 8 optd_airlines.csv| head 
+cut -d "^" -f 8 optd_airlines.csv| uniq -c
+cut -d "^" -f 8 optd_airlines.csv| uniq -c | sort
+cut -d "^" -f 8 optd_airlines.csv| sort -u 
+cut -d "^" -f 8 optd_airlines.csv| sort -n 
+cut -d "^" -f 8 optd_airlines.csv| sort -nr 
+cut -d "^" -f 8 optd_airlines.csv| sort -nr | head
+cut -d "^" -f 8 optd_airlines.csv| sort -n | head 
+cut -d "^" -f 8,14  optd_airlines.csv| sort -n | head 
+cut -d "^" -f 8,14  optd_airlines.csv| head
+cat optd_airlines.csv| cut -d "^" -f 8,14 | head |sort -t "^" -k2,2
+cat optd_airlines.csv| cut -d "^" -f 8,14 | head |sort -t "^" -k2rn,2
+cat optd_airlines.csv| cut -d "^" -f 8,14 | head |sort -t "^" -k2rn,2 | head -1
+cat optd_airlines.csv| cut -d "^" -f 8,14 | head |sort -t "^" -k2rn,2 | head -3
+cat optd_airlines.csv| cut -d "^" -f 8,14  |sort -t "^" -k2rn,2 | head -3
+cat optd_airlines.csv| cut -d "^" -f 8,14  |sort -t "^" -k2rn,2 | head -1
+cat -d "^" -f 10 | head
+cat -d "^" -f 10 optd_airlines.csv| head
+cut -d "^" -f 10 optd_airlines.csv| head
+cut -d "^" -f 10 optd_airlines.csv| sort
+cut -d "^" -f 10 optd_airlines.csv| sort| unique -c
+cut -d "^" -f 10 optd_airlines.csv| sort| uniq -c
+# este era el ejercicio 5
+cut -d "^" -f 10 optd_airlines.csv| sort| uniq -c
+cut -d "^" -f 10 optd_airlines.csv| sort| uniq -c | sort
+cut -d "^" -f 10 optd_airlines.csv| sort| uniq -c | sort nr
+cut -d "^" -f 10 optd_airlines.csv| sort| uniq -c | sort -nr
+cd .. shell
+cd shell
+cd ..
+cd shell
+grep this Text_example.txt
+# busca el patron
+grep this Text_example.txt
+grep -v
+grep -v this Text_example.txt
+grep -v -n this Text_example.txt
+grep -i this Text_example.txt
+grep -i this Text_example.txt Finn.txt
+grep -i -n this Text_example.txt Finn.txt
+grep -i -nv this Text_example.txt Finn.txt
+grep -n this Text_example.txt
+grep -n B 1 this Text_example.txt
+ll
+grep -n -A 1 this Text_example.txt
+grep -n -C 1 this Text_example.txt
+grep -n -w this Text_example.txt
+grep -n line  Text_example.txt
+grep -n -w line  Text_example.txt
+grep -E "^T"
+grep -E "^T" Text_example.txt
+grep -E ^T Text_example.txt
+grep -E "^T" Text_example.txt
+grep -E "T^" Text_example.txt
+grep -E "T*" Text_example.txt
+grep -E "T^" Text_example.txt
+grep -E "^T" Text_example.txt
+echo 
+echo Sunday
+echo Sunday | sed ssday
+echo Sunday | sed ssdaysnights
+echo Sunday | sed 's/day/night'
+echo Sunday | sed 's/day/night/'
+echo Sunday.day | sed 's/day/night/'
+echo Sunday.day | sed 's/day/night/g'
+echo Sunday.day | sed s/day/night/g
+sed 's/this/THAT/g' Text_example.txt
+sed 's/this/RONALDO/g' Text_example.txt
+sed 's/this/RONALDO/gI' Text_example.txt
+cp Text_example.txt Text_example_copy.txt
+sed -i 's/this/RONALDO/gI' Text_example_copy.txt
+cat Text_example_copy.txt
+seq 5
+seq 5 | sed -n '2p'
+seq 5 | sed  '2p'
+# este ultimo imprime la segunda linea
+# Lo omitimos ocn el -n
+# q saca solo la seunda linea
+seq 5 | sed  '2p, 4p'
+seq 5 | sed  '2,4p'
+seq 5 | sed  -n '2,4p'
+seq 5 | sed  '3d'
+sed -i '3d' Text_example_copy.txt
+cat Text_example_copy.txt
+cat -n  Text_example_copy.txt
+sed -n '2p'
+sed -n '2p' Text_example_copy.txt
+sed '/lines/d' Text_example_copy.txt
+sed '/lines/!d' Text_example_copy.txt
+clear
+ll
+rm -rf Text_example_copy.txt
+ll
+cp Text_example.txt Text_example_copy.txt
+ll
+history 50
+sed 's/line/n/' Text_example_copy.txt
+sed 's/line/\n/' Text_example_copy.txt
+grep -n -w line Text_example_copy.txt
+grep -v line Text_example_copy.txt
+cat Text_example_copy.txt
+sed 's/line/\n/g' Text_example_copy.txt
+sed '/line/p' Text_example_copy.txt
+sed -n '/line/p' Text_example_copy.txt
+sed -n '/line/!p' Text_example_copy.txt
+cd ~
+ll
+cd ClasesMaster
+ll
+cd Shell
+ll
+git pull
+# primero actualizamos ocn remoto
+cat ~/.history > ./shell_clase_2020-11-20.txt
+ll
+git status
+gedit shell_clase_2020-11-20.txt
+git add shell_clase_2020-11-20.txt
+git status
+git commit -m "sort, uniq, cut, paste, grep, sed, tr"
+git push shell_clase_2020-11-20.txt
+git push
+git status
+cd .. 
+cd ..
+cp -r ClasesMaster ClasesMaster_test
+ll
+cd ClasesMaster_test
+git ls-files
+touch shell.backup
+git status
+touch .gitignore
+ll
+echo '*backup' >> .gitignore
+git status
+cat .gitignore
+echo '*~' >> .gitignore
+cat .gitignore
+git add.gitignore
+git commit -m "adedd .gitignore"
+git add. gitignore
+git commit -m "adedd .gitignore"
+git status
+git add .gitignore
+git status
+git commit -m "add .gitignore"
+ll
+cd Shell
+ll
+gedit shell_clase_2020-11-20.txt
+git add -u
+git status
+gedit shell_clase_2020-11-20.txt
+git status
+cd ..
+ll
+cp -r ClasesMaster_test ClasesMaster_test2
+cp -r ClasesMaster_test ClasesMaster_test3
+cp -r ClasesMaster_test ClasesMaster_test4
+ll
+cd ClasesMaster_test2
+git add -u
+git status
+cd ..
+cd ClasesMaster_test3
+git status
+git checkout -- Shell/shell_clase_2020-11-20.txt
+git status
+cd .. 
+cd ClasesMaster_test4
+git status
+git reset --hard HEAD
+# me he quedado con el ultimo commit que he hecho
+# ocn el ultimo comit q tengo en local no en github
+git log
+git push
+cd ..
+cd ClasesMaster
+git pull
+ll
+cd Shell
+cd ..
+gedit Shell/shell_clase_2020-11-20.txt
+git status
+git reset --hard origin/main
+git status
+# origin main es lo que tenenos en le srvideor
+cat Shell/shell_clase_2020-11-20.txt
+git log
+rm Shell/shell_clase_2020-11-20.txt
+git checkout Shell/shell_clase_2020-11-20.txt
+git log
+clear
+cd
+ll
+cd shared
+cd ..
+cd ClasesMaster/Shell
+cd ..
+cd,,
+cd ..
+cd Data
+cd shell
+zip text files. Finn.txt Text_example.txt
+ll
+zcat text.zip| less
+zipinfo text.zip
+zless text.zip
+zgrep "Finn" text.zip
+mkdir unzipped
+mv text.zip unzipped
+cd unzipped
+unzip text.zip
+cd ..
+gzip Finn.txt Text_example.txt
+ll
+gunzip Finn.txt.gz Text_example.txt.gz
+ll
+bzip2 *.txt 
+ll
+bunzip2 *.bz2
+ll
+bzip2 *.txt 
+ll
+clear
+tar -czvf text_files.tar *.txt
+ll
+bunzip *.txt
+bunzip2 *.bz2
+ll
+tar -czvf text_files.tar *.txt
+ll
+mkdir untar
+mv text_files.tar untar
+cd untar
+tar -xvf text_files.tar
+ll
+clear
+git commit -m "sort, uniq, cut, paste, grep, sed, tr"
+cd Data
+cd ..
+cd opentraveldata
+touch column_name_number.sh
+gedit column_name_number.sh
+git commit -m "sort, uniq, cut, paste, grep, sed, tr"
+paste <(seq 8) <(head -1 optd_aircraft.csv| tr "^" "\n")\
+
+gedit column_name_number.sh
+bash ./column_name_number.sh
+./column_name_number.sh
+chmod 777 column_name_number.sh 
+gedit column_name_number.sh
+which bash
+./column_name_number.sh
+gedit column_name_number.sh
+./column_name_number.sh optd_aircraft.csv
+gedit column_name_number.sh
+./column_name_number.sh optd_aircraft.csv
+echo $0
+gedit column_name_number.sh
+./column_name_number.sh optd_aircraft.csv "^"
+gedit column_name_number.sh
+./column_name_number.sh optd_aircraft.csv "^"
+gedit column_name_number.sh
+./column_name_number.sh optd_aircraft.csv "^"
+gedit column_name_number.sh
+./column_name_number.sh optd_aircraft.csv "^"
+gedit column_name_number.sh
+./column_name_number.sh optd_aircraft.csv "^"
+ll
+history 100
+ll
+history 50
+cd Data
+cd ..
+cd ~
+ll
+cat 20lines.txt
+ll
+cat unique_example.txt
+history 50
+cd Data/opentraveldata
+ls .l 
+ls -l
+ls -a
+gedit column_name_number.sh
+./column_name_number.sh optd_aircraft.csv "^"
+gedit column_name_number.sh
+./column_name_number.sh ref_airline_nb_of_flights.csv
+./column_name_number.sh ref_airline_nb_of_flights.csv "^"
+./column_name_number.sh optd_por_public.csv
+./column_name_number.sh optd_por_public.csv "^"
+cd ~
+mkdir my_scripts
+ls
+mv Data/opentraveldata/column_name_number.sh my_scripts
+column_name_number.sh
+echo $PATH
+echo $PATH | tr ":" "\n"
+cp .zshrc .zshrc_backup
+gedit .zshrc
+tail .zshrc
+echo $PATH
+echo $PAth
+echo $PATH
+echo $PATH | tr ":" "\n"
+gtedt .zshrc
+gedit .zshrc
+cd Data
+cd opentraveldata
+column_name_number.sh optd_por_public.csv "^"
+clear
+csvlook -d "^" optd_aircraft.csv | less -S
+head optd_por_public.csv
+csvlook -d "^" optd_aircraft.csv | less -S
+head -100 optd_por_public.csv| csvlook -d "^"
+clear
+tail -100 optd_por_public.csv| csvlook -d "^"
+q
+clear
+csvstat -d "^" optd_aircraft.csv
+csvstat -d "^" -c aircraft_type optd_aircraft.csv
+csvcut -d "^" -c aircraft_type,manufaturer optd_aircraft.csv 
+csvcut -d "^" -c aircraft_type,manufaturer optd_aircraft.csv | less -S
+csvcut -d "^" -c aircraft_type,manucfaturer optd_aircraft.csv | less -S
+csvcut -d "^" -c aircraft_type,manufacturer optd_aircraft.csv | less -S
+csvsql -d "^" optd_aircraft.csv
+csvsql -d "^" -i postgresql optd_aircraft.csv
+csvsql -d "^" -i mysql optd_aircraft.csv
+csvsql -d "^" -i oracle  optd_aircraft.csv
+csvsql -d "^" -i mysql  optd_aircraft.csv > sql_aircraft.sql
+cat sql_aircraft.sql
+clear
+ll
+cd ..
+cd ClasesMaster/Shell
+ll
+cat ~/.history > ./shell_clase_2020-11-21.txt
